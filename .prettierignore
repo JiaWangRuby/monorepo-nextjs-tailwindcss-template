@@ -1,0 +1,14 @@
+.cache/
+.next/
+.swc/
+.turbo/
+coverage/
+dist/
+e2e-report/
+e2e-results/
+out/
+storybook-static/
+.eslintcache
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

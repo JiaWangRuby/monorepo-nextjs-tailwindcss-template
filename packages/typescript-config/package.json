@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "typescript-config",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@tsconfig/strictest": "1.0.2"
+  }
+}
