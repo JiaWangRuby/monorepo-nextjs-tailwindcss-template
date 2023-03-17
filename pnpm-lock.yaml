@@ -76,11 +76,13 @@ importers:
       tailwindcss-config: workspace:*
       typescript-config: workspace:*
       ui: workspace:*
+      utils: workspace:*
     dependencies:
       next: 13.2.4_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       ui: link:../../packages/ui
+      utils: link:../../packages/utils
     devDependencies:
       jest-config: link:../../packages/jest-config
       next-config: link:../../packages/next-config
@@ -101,11 +103,13 @@ importers:
       tailwindcss-config: workspace:*
       typescript-config: workspace:*
       ui: workspace:*
+      utils: workspace:*
     dependencies:
       next: 13.2.4_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       ui: link:../../packages/ui
+      utils: link:../../packages/utils
     devDependencies:
       jest-config: link:../../packages/jest-config
       next-config: link:../../packages/next-config
@@ -200,6 +204,14 @@ importers:
       jest-config: link:../jest-config
       storybook-config: link:../storybook-config
       tailwindcss-config: link:../tailwindcss-config
+      typescript-config: link:../typescript-config
+
+  packages/utils:
+    specifiers:
+      jest-config: workspace:*
+      typescript-config: workspace:*
+    devDependencies:
+      jest-config: link:../jest-config
       typescript-config: link:../typescript-config
 
 packages:

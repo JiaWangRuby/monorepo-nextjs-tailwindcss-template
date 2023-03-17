@@ -26,6 +26,7 @@ This monorepo includes a few apps and packages.
 - `apps/omega-star`: a Next.js app with Tailwind CSS
 - `apps/website`: another Next.js app with Tailwind CSS
 - `packages/ui`: a stub React component library with Tailwind CSS, shared by both `omega-star` and `website` apps
+- `packages/utils`: utilities shared by both `omega-star` and `website` apps
 - `packages/eslint-config-custom`: shared ESLint configuration
 - `packages/jest-config`: shared Jest configuration
 - `packages/next-config`: shared Next.js configuration

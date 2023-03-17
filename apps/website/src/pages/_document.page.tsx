@@ -6,6 +6,7 @@ import Document, {
   Main,
   NextScript,
 } from "next/document";
+import { getCspContent } from "utils";
 
 class MyDocument extends Document {
   static override async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -15,9 +16,13 @@ class MyDocument extends Document {
   }
 
   override render() {
+    const csp = getCspContent(NextScript.getInlineScriptSource(this.props));
+
     return (
       <Html className="bg-zinc-900">
-        <Head />
+        <Head>
+          <meta httpEquiv="Content-Security-Policy" content={csp} />
+        </Head>
         <body>
           <Main />
           <NextScript />

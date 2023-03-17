@@ -3,6 +3,7 @@
     { "path": "apps/omega-star", "name": "apps/omega-star" },
     { "path": "apps/website", "name": "apps/website" },
     { "path": "packages/ui", "name": "packages/ui" },
+    { "path": "packages/utils", "name": "packages/utils" },
     { "path": "packages/eslint-config-custom", "name": "packages/eslint-config-custom" },
     { "path": "packages/jest-config", "name": "packages/jest-config" },
     { "path": "packages/next-config", "name": "packages/next-config" },
@@ -188,6 +189,14 @@
         "runtimeExecutable": "pnpm",
         "runtimeArgs": ["test:unit", "${file}"],
         "cwd": "${workspaceFolder:packages/ui}"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug unit test (packages/utils)",
+        "runtimeExecutable": "pnpm",
+        "runtimeArgs": ["test:unit", "${file}"],
+        "cwd": "${workspaceFolder:packages/utils}"
       }
     ]
   }
