@@ -9,6 +9,7 @@ e2e-results/
 out/
 storybook-static/
 .eslintcache
+CHANGELOG.md
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
